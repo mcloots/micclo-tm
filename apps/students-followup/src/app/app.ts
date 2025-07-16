@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { Navbar } from '@micclo-tm/feature';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [Navbar, RouterModule],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',

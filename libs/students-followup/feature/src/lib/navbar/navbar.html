@@ -1,0 +1,9 @@
+<nav>
+    <span>My App</span>
+    @if(this.authService.isAuthenticated()) {
+    <button (click)="logout()">Logout</button>
+    }
+    @else {
+    <button (click)="login()">Login</button>
+    }
+</nav>

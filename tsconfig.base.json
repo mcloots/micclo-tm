@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@micclo-tm/domain": ["libs/students-followup/domain/src/index.ts"],
+      "@micclo-tm/feature": ["libs/students-followup/feature/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
