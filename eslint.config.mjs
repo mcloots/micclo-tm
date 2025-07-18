@@ -21,6 +21,14 @@ export default [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
           depConstraints: [
             {
+              sourceTag: 'type:feature',
+              onlyDependOnLibsWithTags: ['type:domain'],
+            },
+            {
+              sourceTag: 'type:domain',
+              onlyDependOnLibsWithTags: [],
+            },
+            {
               sourceTag: 'scope:students-followup',
               onlyDependOnLibsWithTags: [
                 'scope:students-followup',
