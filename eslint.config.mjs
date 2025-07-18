@@ -21,8 +21,15 @@ export default [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
           depConstraints: [
             {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
+              sourceTag: 'scope:students-followup',
+              onlyDependOnLibsWithTags: [
+                'scope:students-followup',
+                'type:util',
+              ],
+            },
+            {
+              sourceTag: 'scope:bricks-buddy',
+              onlyDependOnLibsWithTags: ['scope:bricks-buddy', 'type:util'],
             },
           ],
         },

@@ -1,26 +1,26 @@
 {
-  "name": "students-followup",
+  "name": "bricks-buddy",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/students-followup/src",
-  "tags": ["scope:students-followup", "type:app"],
+  "sourceRoot": "apps/bricks-buddy/src",
+  "tags": ["scope:bricks-buddy", "type:app"],
   "targets": {
     "build": {
       "executor": "@angular/build:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/students-followup",
-        "browser": "apps/students-followup/src/main.ts",
+        "outputPath": "dist/apps/bricks-buddy",
+        "browser": "apps/bricks-buddy/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/students-followup/tsconfig.app.json",
+        "tsConfig": "apps/bricks-buddy/tsconfig.app.json",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/students-followup/public"
+            "input": "apps/bricks-buddy/public"
           }
         ],
-        "styles": ["apps/students-followup/src/styles.css"]
+        "styles": ["apps/bricks-buddy/src/styles.css"]
       },
       "configurations": {
         "production": {
@@ -51,10 +51,10 @@
       "executor": "@angular/build:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "students-followup:build:production"
+          "buildTarget": "bricks-buddy:build:production"
         },
         "development": {
-          "buildTarget": "students-followup:build:development"
+          "buildTarget": "bricks-buddy:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -62,7 +62,7 @@
     "extract-i18n": {
       "executor": "@angular/build:extract-i18n",
       "options": {
-        "buildTarget": "students-followup:build"
+        "buildTarget": "bricks-buddy:build"
       }
     },
     "lint": {
@@ -72,16 +72,16 @@
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../coverage/apps/students-followup"
+        "reportsDirectory": "../../coverage/apps/bricks-buddy"
       }
     },
     "serve-static": {
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "students-followup:build",
+        "buildTarget": "bricks-buddy:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/students-followup/browser",
+        "staticFilePath": "dist/apps/bricks-buddy/browser",
         "spa": true
       }
     }

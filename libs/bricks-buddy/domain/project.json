@@ -1,16 +1,16 @@
 {
-  "name": "domain",
+  "name": "bricks-buddy-domain",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/students-followup/domain/src",
+  "sourceRoot": "libs/bricks-buddy/domain/src",
   "prefix": "lib",
   "projectType": "library",
-  "tags": ["scope:students-followup", "type:domain"],
+  "tags": ["scope:bricks-buddy", "type:domain"],
   "targets": {
     "test": {
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../../coverage/libs/students-followup/domain"
+        "reportsDirectory": "../../../coverage/libs/bricks-buddy/domain"
       }
     },
     "lint": {

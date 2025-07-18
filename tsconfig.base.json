@@ -15,6 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@micclo-tm/bricks-buddy-domain": [
+        "libs/bricks-buddy/domain/src/index.ts"
+      ],
+      "@micclo-tm/bricks-buddy-feature": [
+        "libs/bricks-buddy/feature/src/index.ts"
+      ],
+      "@micclo-tm/bricks-buddy-ui": ["libs/bricks-buddy/ui/src/index.ts"],
+      "@micclo-tm/bricks-buddy-util": ["libs/bricks-buddy/util/src/index.ts"],
       "@micclo-tm/domain": ["libs/students-followup/domain/src/index.ts"],
       "@micclo-tm/feature": ["libs/students-followup/feature/src/index.ts"]
     }
